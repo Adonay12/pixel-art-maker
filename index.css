@@ -1,0 +1,19 @@
+#boxHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+div {
+  min-height: 19px;
+  min-width: 19px;
+  border: groove;
+}
+#color {
+  display: flex;
+  flex-wrap: wrap;
+} 
+ in 1..36
+  div:nth-child({i})::after
+    content 'i == ' + i
+    background-color hsl(i * 10, 50%, 50%)
+
+
