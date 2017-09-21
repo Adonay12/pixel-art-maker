@@ -11,9 +11,3 @@ div {
   display: flex;
   flex-wrap: wrap;
 } 
- in 1..36
-  div:nth-child({i})::after
-    content 'i == ' + i
-    background-color hsl(i * 10, 50%, 50%)
-
-

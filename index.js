@@ -1,20 +1,14 @@
-var width = screen.width;
-var height = screen.height;
-//var body = document.querySelector('body');
-var section = 'div0'
+var width = screen.width/20.8888888885;
+var height = screen.height/20.07;
+var boxes = Number(width*height);
 var boxHolder = document.getElementById('boxHolder')
 
-  for(var i = 0; i <= 1049; i++){
+  for(var i = 0; i <=boxes ; i++){
     let newBox = document.createElement('div');
     boxHolder.append(newBox);
   }
-var colorsB = document.getElementById('color');
-
-  
-  for(var i = 0; i <=20; i++){
-    let newColorBox = document.createElement('div');
-    colorsB.append(newColorBox);
-  }   
-
-
-  
+boxHolder.addEventListener("click", function( event ) {
+  if(event.target.nodeName === "DIV"){
+  event.target.style.backgroundColor = "black"
+  }
+})
